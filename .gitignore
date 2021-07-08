@@ -10,3 +10,4 @@ papers.html
 style.css
 *.jpeg
 /cat
+.DS_STORE
