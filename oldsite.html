@@ -1,0 +1,221 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137376802-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137376802-1');
+</script>
+
+
+<html>
+<style>
+img{
+  width: 25%;
+}
+</style>
+
+<script language="JavaScript">
+<!-- hide script from old browsers
+
+/*[*] SCRIPT: Bouncing Image Script COPYRIGHT: (c) 1999 Hass
+[*] AUTHOR: Lloyd Hassell EMAIL: lloydhass@hotmail.com
+[*] WWW: http://go.to/hass
+[*] Permission granted to Dynamicdrive.com to feature script in archive
+[*] Modified by Dynamicdrive.com for feature alteration
+[*] For this and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//Configure the below three variables (BallSpeed from 1 to 50, larger is faster)
+var ballWidth = 75;
+var ballHeight = 75;
+var BallSpeed = 9;
+var stopafter=30; //set time in seconds before ball disappears. Use 0 for never
+
+var maxBallSpeed = 50;
+var xMax;
+var yMax;
+var xPos = 0;
+var yPos = 0;
+var xDir = 'right';
+var yDir = 'down';
+var superballRunning = true;
+var tempBallSpeed;
+var currentBallSrc;
+var newXDir;
+var newYDir;
+
+function stopit(){
+clearTimeout(doit)
+if (document.getElementById)
+document.getElementById("superball").style.visibility="hidden"
+else if (document.all)
+document.all("superball").style.visibility = "hidden";
+else
+document.layers["superball"].visibility = "hide";
+}
+
+function initializeBall() {
+if (document.all) {
+xMax = document.body.clientWidth;
+yMax = document.body.clientHeight
+document.all("superball").style.visibility = "visible";
+}
+else if (document.layers||document.getElementById) {
+xMax = window.innerWidth-14;
+yMax = window.innerHeight;
+if (document.getElementById)
+document.getElementById("superball").style.visibility="visible"
+else
+document.layers["superball"].visibility = "show";
+}
+setTimeout('moveBall()',400);
+if (stopafter>0)
+setTimeout("stopit()",stopafter*1000)
+}
+
+
+function moveBall() {
+if (superballRunning == true) {
+calculatePosition();
+if (document.all) {
+document.all("superball").style.left = xPos + document.body.scrollLeft;
+document.all("superball").style.top = yPos + document.body.scrollTop;
+}
+else if (document.layers) {
+document.layers["superball"].left = xPos + pageXOffset;
+document.layers["superball"].top = yPos + pageYOffset;
+}
+else if (document.getElementById) {
+document.getElementById("superball").style.left = xPos + pageXOffset;
+document.getElementById("superball").style.top = yPos + pageYOffset;
+}
+doit=setTimeout('moveBall()',30);
+}
+}
+
+function calculatePosition() {
+if (xDir == "right") {
+if (xPos > (xMax - ballWidth - BallSpeed)) {
+xDir = "left";
+}
+}
+else if (xDir == "left") {
+if (xPos < (0 + BallSpeed)) {
+xDir = "right";
+}
+}
+if (yDir == "down") {
+if (yPos > (yMax - ballHeight - BallSpeed)) {
+yDir = "up";
+}
+}
+else if (yDir == "up") {
+if (yPos < (0 + BallSpeed)) {
+yDir = "down";
+}
+}
+if (xDir == "right") {
+xPos = xPos + BallSpeed;
+}
+else if (xDir == "left") {
+xPos = xPos - BallSpeed;
+}
+else {
+xPos = xPos;
+}
+if (yDir == "down") {
+yPos = yPos + BallSpeed;
+}
+else if (yDir == "up") {
+yPos = yPos - BallSpeed;
+}
+else {
+yPos = yPos;
+}
+}
+
+if (document.all||document.layers||document.getElementById){
+window.onload = initializeBall;
+window.onresize = new Function("window.location.reload()");
+}
+
+// end hiding from old browsers -->
+</script>
+
+<style type="text/css">
+
+#superball {
+position:absolute;
+left:0;
+top:0;
+visibility:hide;
+visibility:hidden;
+width:300;
+height:75;
+}
+
+</style>
+
+
+<body style="background-color:#66ccff;">
+
+<span id="superball"><a href="http://www.dynamicdrive.com"><img name="superballImage" src="emoji.png" height="160" width="40" border="0"></a></span>
+
+
+
+<body>
+<center>
+<h1>This is al3574.</h1>
+
+
+<p>Please visit my updated and professional site here: <a href="index.html">ana lam</a>.
+
+<p>Hello world! My name is Ana Lam. I'm a junior physics major at Barnard College. During my school semesters, I work as a Writing Fellow in the Barnard Writing Center. I also work as a physics tutor and conduct gravitational wave research with the Columbia Experimental Gravity Group (GECo). In my free time I like to explore New York City and read postmodern and contemporary literature. Here are pictures of some of dogs I have encountered.<p/>
+
+<center>
+<p>Cheers!<p/>
+
+<img src="dogs\dog1.jpg" alt="dog1">
+<img src="dogs\dog.jpg" alt="dog2">
+<img src="dogs\dog(1).jpg" alt="dog3">
+<img src="dogs\dog(2).jpg" alt="dog4">
+<img src="dogs\dog(3).jpg" alt="dog5">
+<img src="dogs\dog(4).jpg" alt="dog6">
+<img src="dogs\dog(5).jpg" alt="dog7">
+<img src="dogs\dog(6).jpg" alt="dog8">
+<img src="dogs\dog(7).jpg" alt="dog9">
+<img src="dogs\dog(8).jpg" alt="dog10">
+<img src="dogs\dog(32).jpg" alt="dog33">
+<img src="dogs\dog(9).jpg" alt="dog11">
+<img src="dogs\dog(29).jpg" alt="dog31">
+<img src="dogs\dog(10).jpg" alt="dog12">
+<img src="dogs\dog(28).jpg" alt="dog30">
+<img src="dogs\dog(30).jpg" alt="dog32">
+<img src="dogs\dog(12).jpg" alt="dog14">
+<img src="dogs\dog(11).jpg" alt="dog13">
+<img src="dogs\dog(13).jpg" alt="dog15">
+<img src="dogs\dog(31).jpg" alt="dog32">
+<img src="dogs\dog(25).jpg" alt="dog27">
+<img src="dogs\dog(14).jpg" alt="dog16">
+<img src="dogs\dog(15).jpg" alt="dog17">
+<img src="dogs\dog(16).jpg" alt="dog18">
+<img src="dogs\dog(17).jpg" alt="dog19">
+<img src="dogs\dog(18).jpg" alt="dog20">
+<img src="dogs\dog(19).jpg" alt="dog21">
+<img src="dogs\dog(20).jpg" alt="dog22">
+<img src="dogs\dog(33).jpg" alt="dog34">
+<img src="dogs\dog(26).jpg" alt="dog28">
+<img src="dogs\dog(21).jpg" alt="dog23">
+<img src="dogs\dog(22).jpg" alt="dog24">
+<img src="dogs\dog(23).jpg" alt="dog25">
+<img src="dogs\dog(24).jpg" alt="dog26">
+<img src="dogs\dog(27).jpg" alt="dog29">
+
+</body>
+</html>
+<html>
+<style>
+img{
+  width: 25%;
